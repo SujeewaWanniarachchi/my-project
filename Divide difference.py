@@ -16,11 +16,11 @@ def dividedDiffTable(x, y, n):
   
 ## Function for applying Newton's divided difference formula  
 def applyFormula(value, x, y, n):  
-    sum = y[0][0];  
+    total = y[0][0];  
     
     for i in range(1, n): 
-        sum = sum + (proterm(i, value, x) * y[0][i]);  
-    return sum;  
+        total = total + (proterm(i, value, x) * y[0][i]);  
+    return total;  
   
 ## Function for displaying divided difference table  
 def printDiffTable(y, n):  
